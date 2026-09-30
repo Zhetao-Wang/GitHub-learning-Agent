@@ -1,18 +1,17 @@
-# GitHub 学习 Agent
+# GitHub-learning-Agent
 
 > 输入一个 GitHub 仓库链接，让 AI 将项目源码整理成一份适合阅读和学习的中文 HTML 文档。
 
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/status-MVP-orange)
+
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 GitHub 学习 Agent 是一个用于练习工程化 Python 开发的学习项目。它会克隆指定仓库、读取其中的文本文件，将整理后的仓库内容发送给 DeepSeek，最后在本地生成一份带有项目讲解、学习顺序和问答环节的 HTML 学习文档。
 
-当前版本是一个可以完整运行的 MVP（最小可行产品），主要面向可信的公开 GitHub 仓库。
 
 ## 目录
 
-- [GitHub 学习 Agent](#github-学习-agent)
+- [GitHub-learning-Agent](#github-learning-agent)
   - [目录](#目录)
   - [项目功能](#项目功能)
   - [运行效果](#运行效果)
@@ -22,7 +21,6 @@ GitHub 学习 Agent 是一个用于练习工程化 Python 开发的学习项目�
     - [2. 创建并激活 Conda 环境](#2-创建并激活-conda-环境)
     - [3. 安装依赖](#3-安装依赖)
     - [4. 创建本地环境变量文件](#4-创建本地环境变量文件)
-  - [环境变量](#环境变量)
   - [使用方法](#使用方法)
   - [项目结构](#项目结构)
   - [安全与隐私](#安全与隐私)
@@ -81,8 +79,6 @@ conda create --name github-study-agent python=3.12
 conda activate github-study-agent
 ```
 
-如果不使用 Conda，也可以使用 Python 自带的虚拟环境工具。
-
 ### 3. 安装依赖
 
 ```bash
@@ -103,13 +99,7 @@ DEEPSEEK_API_KEY=你的_API_Key
 
 不要把真实 API Key 提交到 Git 仓库。项目已经通过 `.gitignore` 忽略 `.env`。
 
-## 环境变量
 
-| 变量名 | 是否必需 | 用途 |
-| --- | --- | --- |
-| `DEEPSEEK_API_KEY` | 是 | 调用 DeepSeek API 时进行身份验证 |
-
-程序启动时会从项目根目录下的 `.env` 文件加载该变量。
 
 ## 使用方法
 
@@ -174,15 +164,7 @@ output/                   # 存放生成的学习文档
 
 这是一个学习中的项目，欢迎通过 Issue 提出建议，也欢迎提交 Pull Request。
 
-推荐的贡献流程：
 
-1. Fork 本仓库。
-2. 创建自己的功能分支。
-3. 完成修改并进行本地验证。
-4. 提交清晰、单一目的的 commit。
-5. 创建 Pull Request，说明修改原因和验证方式。
-
-提交代码前，请确认没有包含 API Key、生成文件、克隆下来的仓库或其他隐私数据。
 
 ## 许可证
 
