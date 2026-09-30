@@ -2,7 +2,7 @@
 
 > 输入一个 GitHub 仓库链接，让 AI 将项目源码整理成一份适合阅读和学习的中文 HTML 文档。
 
-![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
+
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 
