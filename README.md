@@ -4,7 +4,7 @@
 
 
 
-![License](https://img.shields.io/badge/license-MIT-green)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 GitHub 学习 Agent 是一个用于练习工程化 Python 开发的学习项目。它会克隆指定仓库、读取其中的文本文件，将整理后的仓库内容发送给 DeepSeek，最后在本地生成一份带有项目讲解、学习顺序和问答环节的 HTML 学习文档。
 
@@ -26,6 +26,7 @@ GitHub 学习 Agent 是一个用于练习工程化 Python 开发的学习项目�
   - [安全与隐私](#安全与隐私)
   - [参与贡献](#参与贡献)
   - [许可证](#许可证)
+  - [Star History](#star-history)
 
 ## 项目功能
 
@@ -135,6 +136,7 @@ GitHub--Agent/
 ├── repository.py         # 克隆 GitHub 仓库
 ├── scanner.py            # 扫描和读取仓库文件
 ├── requirements.txt      # Python 依赖版本
+├── LICENSE               # MIT 许可证文本
 └── README.md             # 项目说明文档
 ```
 
@@ -168,4 +170,8 @@ output/                   # 存放生成的学习文档
 
 ## 许可证
 
-本项目采用 MIT License。正式的许可文本将保存在项目根目录的 `LICENSE` 文件中。
+本项目采用 [MIT License](LICENSE)，完整许可文本见项目根目录的 `LICENSE` 文件。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/chart?repos=Zhetao-Wang/GitHub--Agent&type=date&legend=top-left)](https://www.star-history.com/?repos=Zhetao-Wang%2FGitHub--Agent&type=date&legend=top-left)
