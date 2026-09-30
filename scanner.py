@@ -14,5 +14,4 @@ def read_repository_file(repo_path: Path, relative_path: Path) -> str:
     try:
         return file_path.read_text(encoding="utf-8")
     except UnicodeDecodeError as error:
-        raise ValueError(f"无法按 UTF-8 文本读取文件：{relative_path}") from error 
-
+        raise ValueError(f"无法按 UTF-8 文本读取文件：{relative_path}") from error

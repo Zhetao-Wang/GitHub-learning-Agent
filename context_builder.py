@@ -2,7 +2,8 @@ from pathlib import Path
 
 from scanner import list_repository_files, read_repository_file
 
-max_context=16000000
+max_context = 1600000
+
 
 def build_repository_context(repo_path: Path) -> str:
     sections: list[str] = []
@@ -26,6 +27,5 @@ def build_repository_context(repo_path: Path) -> str:
     context = "\n\n".join(sections)
     if len(context) > max_context:
         raise ValueError(f"允许字符数{max_context},实际字符数{len(context)}")
-    
+
     return context
-        

@@ -30,7 +30,6 @@ def create_deepseek_client() -> OpenAI:
     return client
 
 
-
 def build_messages(repository_context: str) -> list[dict[str, str]]:
     user_prompt = f"""
 请根据下面的仓库内容生成学习文档。
@@ -53,14 +52,13 @@ def build_messages(repository_context: str) -> list[dict[str, str]]:
 
     return messages
 
+
 def generate_study_html(repository_context: str) -> str:
     client = create_deepseek_client()
     messages = build_messages(repository_context)
 
     response = client.chat.completions.create(
-        model=DEEPSEEK_MODEL,
-        messages = messages,
-        max_tokens = 200000
+        model=DEEPSEEK_MODEL, messages=messages, max_tokens=200000
     )
     choice = response.choices[0]
     if choice.finish_reason == "stop":
