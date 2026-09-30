@@ -2,3 +2,5 @@
 __pycache__/
 *.pyc
 workspaces/
+.DS_Store
+output/
